@@ -1,1 +1,3 @@
-# IC_UNIFIEO
+# Método Para Obtenção, Limpeza E Apresentação De Dados Gerados Por Sensores De Hardware Open Source Utilizando Software Estatístico R
+
+Este projeto tem o objetivo de desenvolver uma metodologia, utilizando o software estatístico R, capaz de apresentar gráficos e resumos estatísticos de dados obtidos por um dispositivo de hardware livre que auxilie o usuário no processo de aprendizagem destas plataformas.  Atualmente, existem soluções que realizam o tratamento e apresentação dos dados porém com um certo nível de complexidade e intermediários (códigos adicionais, acesso à internet, conta paga,etc.)
