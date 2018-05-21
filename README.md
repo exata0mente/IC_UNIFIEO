@@ -44,13 +44,19 @@ Desenvolver métodos para obtenção, limpeza e apresentação de dados gerados 
 
 * Identificar pacotes do R que permitam interação com interfaces de hardware.
 * Descrever as formas de comunicação e obtenção de dados entre o R e o hardware.
+* Sugerir melhorias nos pacotes de comunicação serial.
 * Aplicar conceitos de limpeza de dados aos dados lidos.
 * Identificar pacotes do R que permitam apresentar dados de forma dinâmica e possivelmente em tempo real.
 * Aplicar métodos de apresentação e resumo de dados.
 
+
 ## O que já sei sobre o tema? (Revisão da literatura) 
 
+O Arduíno utiliza um canal de comunicação serial para enviar e receber dados, este canal é simulado através de uma comunicação USB. Utilizando um sistema operacional Linux a leitura destes dados torna-se mais fácil já que as interfaces são montadas como arquivos no diretório `/dev/`. 
 
+No R podemos fazer a leitura de duas formas: I) lendo diretamente o arquivo `/dev/tty??` ou II) utilizando o pacote `serial` que permite leitura diretamente da porta serial emulada. Este é um ponto que pretendo abordar na pesquisa, **qual a melhor forma de leitura? É possível melhorar este método? O pacote utilizado também pode ser melhorado?**
+
+Após a leitura o R entra em ação. A leitura, limpeza e apresentação dos dados serão efetuadas por pacotes específicos. Nesta pesquisa estudarei as opções disponíveis. Já tenho conhecimento do pacote `ggplot2` para criação de gráficos e `dplyr` para manuseamento de conjuntos de dados. A limpeza dos dados será o tópico central pois a apresentação dos dados só será eficiente se sua limpeza e tratamento for efetuada corretamente. Iniciarei minha base no livro [Peng2016] em que é utilizado o pacote `dplyr` para o manusamento dos conjuntos de dados e conceitos como Hierarchical Clustering, K-Means Clustering e Dimension Reduction. Além destes conceitos, pesquisarei sobre outros métodos de organização de dados. Quanto a apresentação dos dados, utilizarei como base os livros [Peng2015b] e [Leek2015].
 
 ## Como vou fazer meu trabalho? (metodologia)
 ## Quando desenvolverei cada etapa da pesquisa? (cronograma)
