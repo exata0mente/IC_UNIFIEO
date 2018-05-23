@@ -4,7 +4,7 @@ Anotações baseadas no documento [Projeto de Pesquisa](http://biblioteca.ifc.ed
 
 ## Titulo?
 
-Uso do ambiente R para análise, tratamento e apresentação de dados coletados por um Arduíno.
+Uso do ambiente R para análise, tratamento e apresentação em tempo real de dados coletados por um Arduíno.
 
 ## O que vou pesquisar?
 
@@ -12,6 +12,7 @@ Uso do ambiente R para análise, tratamento e apresentação de dados coletados 
 * Algoritmos e modelagens que façam tratamento dos dados lidos.
 * Funções para plotagem de gráficos utilizando os dados lidos.
 * Métodos para apresentação da análise dos dados.
+* Ferramentas para visualização de dados via Web.
 
 ## A definição do problema, problematização
 
@@ -46,8 +47,10 @@ Desenvolver métodos para obtenção, limpeza e apresentação de dados gerados 
 * Descrever as formas de comunicação e obtenção de dados entre o R e o hardware.
 * Sugerir melhorias nos pacotes de comunicação serial.
 * Aplicar conceitos de limpeza de dados aos dados lidos.
+* Avaliar técnicas existentes de organização e limpeza de dados.
 * Identificar pacotes do R que permitam apresentar dados de forma dinâmica e possivelmente em tempo real.
 * Aplicar métodos de apresentação e resumo de dados.
+* Implementar servidor Web para visualização dos dados em tempo real.
 
 
 ## O que já sei sobre o tema? (Revisão da literatura ou Estado da Arte) 
@@ -59,7 +62,30 @@ Nosso referencial teórico sobre a linguagem de programação R e análise de da
 
 
 ## Como vou fazer meu trabalho? (metodologia)
+
+O projeto será iniciado com uma pesquisa sobre os métodos disponíveis em R para leitura de dados de um Arduíno. Inicialmente se tem conhecimento do pacote `serial` que fornece métodos para comunicação com uma porta serial. Em seguida, utilizando um projeto pronto de Arduíno, iremos efetuar leituras de dados e aplicar as técnicas de limpeza de dados. 
+
+Para os pacotes que serão utilizados na manipulação e apresentação de dados, `dplyr` e `ggplot2` respectivamente, será efetuado uma pesquisa para entendimento completo das funções fornecidas e posteriormente sua aplicação no projeto. Este é um dos pontos chaves do projeto pois aqui definiremos ou criaremos funções que ficarão em execução enquanto os dados estiverem sendo gerados.
+
+Após definido os métodos de leitura, limpeza e apresentação dos dados, será iniciado uma pesquisa sobre ferramentas de aplicação _web_ que permitam a integração da linguagem R. Em seguida iremos montar um servidor web que recebe e apresenta em tempo real os dados gerados pelo Arduíno. Para isso, fará parte do conhecimento adquirido nesta pesquisa as tecnologias que permitem a criação, hospedagem e modelagem de um servidor de aplicação _web_.
+
+Ao final do projeto, pretende-se apresentar um sistema que mostre em tempo real, informações (gráficos, tabelas, resumos) de dados gerados por um dispositivo de prototipagem Arduíno.
+
 ## Quando desenvolverei cada etapa da pesquisa? (cronograma)
+
+Atividades | Jun | Jul | Ago | Set | Out | Nov | Dez
+--- | --- | --- | --- | --- | --- | --- | --- |
+Pesquisa Bibliográfica | X | X | X | X | X | X | X
+Estudo de métodos de comunicação em R | X |  |  |  |  |  | 
+Relatórios bimestrais | X |  | X |  | X |  | X
+Estudo dos pacotes `dplyr` e `ggplot2` | |X|X||
+Pesquisa sobre técnicas de limpeza de dados | |X|X|X|X|X
+Desenvolvimento do script R | X | X | X | X | X | X | X
+Pesquisa sobre aplicações web |  |  |  |  |  | X | 
+Desenvolvimento aplicação web |  |  |  |  |  | X | X
+Elaboração e revisão da monografia |  |  |  |  |  |  | X
+Elaboração e revisão do artigo científico |  |  |  |  |  |  | X
+
 ## Quanto e com o que irei gastar? (Recursos - orçamento) 
 ## Onde pesquisei? (referências)
 
