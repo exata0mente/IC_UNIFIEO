@@ -50,15 +50,16 @@ Desenvolver métodos para obtenção, limpeza e apresentação de dados gerados 
 * Aplicar métodos de apresentação e resumo de dados.
 
 
-## O que já sei sobre o tema? (Revisão da literatura) 
+## O que já sei sobre o tema? (Revisão da literatura ou Estado da Arte) 
 
-O Arduíno utiliza um canal de comunicação serial para enviar e receber dados, este canal é simulado através de uma comunicação USB. Utilizando um sistema operacional Linux a leitura destes dados torna-se mais fácil já que as interfaces são montadas como arquivos no diretório `/dev/`. 
+Nosso referencial teórico sobre a linguagem de programação R e análise de dados será baseada nas produções acadêmicas de LEEK (2015, 2016), PENG (2015, 2016) e CAFFO (2015). Os autores abordam os passos de um processo de análise de dados e suas respectivas ferramentas. Roger Peng em seu livro _R Programming for Data Science_ traz os conceitos básicos para a utilização do R como linguagem de programação, este livro pode ser considerado um pré-requisito para a leitura dos livros seguintes e servirá como base para questões que envolvem programação estruturada. Em _Exploratory Data Analysis with R_, Peng apresenta ferramentas em R que são utilizadas na análise exploratória de dados. Neste livro é apresentado os pacotes `dplyr` e `ggplot2` para manipulação e apresentação de dados. Além disso são apresentadas técnicas de análise, organização e limpeza de dados como Hierarchical Clustering, K-Means Clustering e Dimension Reduction. Além destas citadas, nesta pesquisa exploraremos outras técnicas de limpeza de dados, como as utilizadas em _data minning_.
 
-No R podemos fazer a leitura de duas formas: I) lendo diretamente o arquivo `/dev/tty??` ou II) utilizando o pacote `serial` que permite leitura diretamente da porta serial emulada. Este é um ponto que pretendo abordar na pesquisa, **qual a melhor forma de leitura? É possível melhorar este método? O pacote utilizado também pode ser melhorado?**
 
-Após a leitura o R entra em ação. A leitura, limpeza e apresentação dos dados serão efetuadas por pacotes específicos. Nesta pesquisa estudarei as opções disponíveis. Já tenho conhecimento do pacote `ggplot2` para criação de gráficos e `dplyr` para manuseamento de conjuntos de dados. A limpeza dos dados será o tópico central pois a apresentação dos dados só será eficiente se sua limpeza e tratamento for efetuada corretamente. Iniciarei minha base no livro [Peng2016] em que é utilizado o pacote `dplyr` para o manusamento dos conjuntos de dados e conceitos como Hierarchical Clustering, K-Means Clustering e Dimension Reduction. Além destes conceitos, pesquisarei sobre outros métodos de organização de dados. Quanto a apresentação dos dados, utilizarei como base os livros [Peng2015b] e [Leek2015].
+> "The modern academic scientist develops code in the open, publishes data and code open source, posts preprints of their academic work, still submits to traditional journals, and reviews for those journals, but may also write blog posts or use social media to critique published work in post-publication review fora." (PENG, 2015)
+
 
 ## Como vou fazer meu trabalho? (metodologia)
 ## Quando desenvolverei cada etapa da pesquisa? (cronograma)
 ## Quanto e com o que irei gastar? (Recursos - orçamento) 
 ## Onde pesquisei? (referências)
+
