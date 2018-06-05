@@ -1,0 +1,24 @@
+*.kilepr
+main.pdf
+
+# Arquivos temporários Kile
+*.aux
+*.bit
+*.blg
+*.bbl
+*.brf 
+*.lof
+*.log
+*.lot
+*.glo
+*.glx
+*.gxg
+*.gxs
+*.idx
+*.ilg
+*.ind
+*.out
+*.url
+*.svn
+*.toc
+*.backup
