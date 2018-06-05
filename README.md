@@ -2,6 +2,8 @@
 
 Anotações baseadas no documento [Projeto de Pesquisa](http://biblioteca.ifc.edu.br/wp-content/uploads/sites/9/2014/07/Como-elaborar-um-projeto-de-pesquisa-de-Inicia%C3%A7%C3%A3o-Cient%C3%ADfica.pdf) da IFC e [Metodologia Científica e Tecnológica](http://www.dsce.fee.unicamp.br/~antenor/mod8.pdf) do Professor Carlos Jung (UNICAMP).
 
+As alterações realizadas nos arquivos LaTeX podem ser acompanhadas em meu repositório do [Overleaf](https://www.overleaf.com/read/qhkvbzvvyqzn)
+
 ## Titulo?
 
 Uso do ambiente R para análise, tratamento e apresentação em tempo real de dados coletados por um Arduíno.
