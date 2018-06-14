@@ -22,3 +22,5 @@ main.pdf
 *.svn
 *.toc
 *.backup
+*.dvi
+*.out.ps
