@@ -82,14 +82,14 @@
 % Texto padrão antes do número das páginas
 \renewcommand{\backref}{}
 % Define os textos da citação
-\renewcommand*{\backrefalt}[4]{
-	\ifcase #1 %
-		Nenhuma citação no texto.%
-	\or
-		Citado na página #2.%
-	\else
-		Citado #1 vezes nas páginas #2.%
-	\fi}%
+%\renewcommand*{\backrefalt}[4]{
+%	\ifcase #1 %
+%		Nenhuma citação no texto.%
+%	\or
+%		Citado na página #2.%
+%	\else
+%		Citado #1 vezes nas páginas #2.%
+%	\fi}%
 % ---
 
 % ---
@@ -243,7 +243,7 @@ fora."\cite{Peng2015}
 
 \subsection{Objetivo Geral}
 
-Desenvolver métodos para obtenção, limpeza e apresentação de dados gerados por 
+Propor métodos para obtenção, limpeza e apresentação de dados gerados por 
 um dispositivo de prototipagem, utilizando a linguagem de programaçao R e o 
 \emph{hardware open source} Arduíno.
 
@@ -253,9 +253,9 @@ um dispositivo de prototipagem, utilizando a linguagem de programaçao R e o
   
   \item Identificar pacotes do R que permitam interação com interfaces de hardware.
   \item Descrever as formas de comunicação e obtenção de dados entre o R e o hardware.
-  \item Sugerir melhorias nos pacotes de comunicação serial.
-  \item Aplicar conceitos de limpeza de dados aos dados lidos.
-  \item Avaliar técnicas existentes de organização e limpeza de dados.
+  %\item Sugerir melhorias nos pacotes de comunicação serial.
+  %\item Aplicar conceitos de limpeza de dados aos dados lidos.
+  %\item Avaliar técnicas existentes de organização e limpeza de dados.
   \item Identificar pacotes do R que permitam apresentar dados de forma dinâmica e 
   possivelmente em tempo real.
   \item Aplicar métodos de apresentação e resumo de dados.
@@ -274,7 +274,7 @@ utilizando um projeto pronto de Arduíno, iremos efetuar leituras de dados e
 aplicar as técnicas de limpeza de dados. 
 
 Para os pacotes que serão utilizados na manipulação e apresentação de dados, 
-\emph{dplyr} e \emph{ggplot2} respectivamente, será efetuado uma pesquisa para 
+\emph{dplyr}\cite{Wickham2018} e \emph{ggplot2}\cite{Wickham2009} respectivamente, será efetuado uma pesquisa para 
 entendimento completo das funções fornecidas e posteriormente sua aplicação no 
 projeto. Este é um dos pontos chaves do projeto já que aqui definiremos ou 
 criaremos funções que ficarão em execução enquanto os dados estiverem sendo 
@@ -357,5 +357,5 @@ Os próximos passos serão de comparação de desempenho de leitura de dados com
 % Inicia os anexos
 % ---
 %\anexos
-\nocite{Wickham2018,Ross1996,Leek2016,Leek2015,Peng2015b}
+%\nocite{Wickham2018,Ross1996,Leek2016,Leek2015,Peng2015b}
 \end{document}
