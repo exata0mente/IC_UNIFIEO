@@ -78,21 +78,26 @@ tamanhoEstimadoAmostra <- function(con = NULL, arquivo = tempfile(), n = 10, t =
   ## @param n quantidade de leituras realizadas
   ## @param t intervalo, em segundos, entre cada leitura
   ## @return lista com os valores máximo, minimo e tamanho da amostra.
+  message("Vamos começar")
+  Sys.sleep(1)
   
-  
+  message("Iniciando estimativa da amostra...")
   taxaEstimada <- c()
   
   while (n > 0) {
     
     obtemAmostra(con, arquivo)  
-    amostra <- read.csv2(arquivo, dec = ".");print(nrow(amostra))
+    amostra <- read.csv2(arquivo, dec = ".");#print(nrow(amostra))
     tamanhoAmostra <- nrow(amostra)
     Sys.sleep(t)
     taxaEstimada <- c(taxaEstimada,nrow(amostra))
     n = n - 1
   }
   
+  
   ## tratamento dos outliers
+  
+  message("Pronto!")
   
   taxaEstimada <- taxaEstimada[-(which(taxaEstimada == min(taxaEstimada)))]
   taxaEstimada <- taxaEstimada[-(which(taxaEstimada == max(taxaEstimada)))]

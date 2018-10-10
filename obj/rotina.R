@@ -12,7 +12,7 @@ source("main.R")
 ## Com o dispositivo já conectado, efetuamos a criação do objeto de conexão
 ## e estabelecemos a conexão entre o R e o arquivo montado no SO.
 
-conexao <- conectarArduino(mode = "115200,n,8,1")
+conexao <- conectarArduino(mode = "9600,n,8,1")
 validaConexao()
 
 ## A gravação dos dados gerados pelo dispositivo será armazenada em um arquivo
@@ -27,29 +27,33 @@ arquivoTemp <- tempfile()
 ## de dados
 
 tempo <- 1.01
-caracAmostra <- tamanhoEstimadoAmostra(conexao, arquivoTemp, n = 10, t = tempo)
+conj <- tamanhoEstimadoAmostra(conexao, arquivoTemp, n = 10, t = tempo)
 
 ## Definição dos objetos que farão parte do ciclo de leitura dos dados
-N <- rep(NA,caracAmostra$tam) # Cria uma cadeia do tamanho da amostra com valores NA.
+N <- rep(NA,conj$tam) # Cria uma cadeia do tamanho da amostra com valores NA.
                               # Utilizamos para montar o gráfico em branco.
-ciclo <- 1000
+ciclo <- 10
 
 for(i in 0:(ciclo-1)){
   ## Início da leitura, em ciclos, dos dados gerados pelo dispositivo
   obtemAmostra(conexao, arquivoTemp)
-  instante <- ((i*caracAmostra$tam):((i+1)*(caracAmostra$tam)))[-1]             # Aqui geramos o vetor que definirá o eixo x do
+  instante <- ((i*conj$tam):((i+1)*(conj$tam)))[-1]             # Aqui geramos o vetor que definirá o eixo x do
                                                                                 # gráfico, acompanhando cada dado da leitura.
-  plot(y = N, x = instante, ylim = c(caracAmostra$min,caracAmostra$max))        # Plotagem do gráfico em branco, definindo
+  plot(y = N, x = instante, ylim = c(conj$min,conj$max))        # Plotagem do gráfico em branco, definindo
                                                                                 # os limites máximo e mínimo do eixo y
   amostra <- read.csv2(file = arquivoTemp,
                        dec = ".",
                        skipNul = 3,
                        row.names = NULL
                        )
-  for(j in seq(caracAmostra$tam)){
+  file.copy(from = arquivoTemp,
+            to = paste(c(getwd(),"/conjunto",i),collapse = "")
+  )
+  
+  for(j in seq(conj$tam)){
     ## Leitura de cada elemento (dado) da leitura efetuada
-    points(x = j + i*caracAmostra$tam, amostra[(j+1),1])
-    Sys.sleep((tempo*1.1)/caracAmostra$tam)   # Sabendo que em t tempo temos caracAmostra$tam podemos
+    points(x = j + i*conj$tam, amostra[(j+1),1])
+    Sys.sleep((tempo*1.1)/conj$tam)   # Sabendo que em t tempo temos conj$tam podemos
                                           # estimar quanto tempo para cada dado ser plotado no mapa
                                           # respeitando o tempo entre uma leitura e outra.
   }
