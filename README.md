@@ -45,7 +45,7 @@ A leitura crítica deve também ser exercida. Dicas de questionamentos:
 
 Arduíno:
 
-    Periodícos específicos de Arduíno, a príncipio, não tem. Podemos utilizar os sistemas de buscas como o Google Acadêmico para verificar os assuntos mais recentes relacionados à tecnologia.
+Periodícos específicos de Arduíno, a príncipio, não tem. Podemos utilizar os sistemas de buscas como o Google Acadêmico para verificar os assuntos mais recentes relacionados à tecnologia.
     
 R:
     
@@ -64,7 +64,8 @@ Periodícos em Geral:
 - http://revistas.pucsp.br/index.php/ReCET/about
 
 ### Obter a lista de todos os artigos publicados nos 5 últimos anos e classificar por relevância.
- 
+
+```bibtex
 @article{RJ-2013-032,
   author = {André Dietrich and Sebastian Zug and Jörg Kaiser},
   title = {{The R in Robotics}},
@@ -190,7 +191,7 @@ Periodícos em Geral:
   year={2016},
   publisher={UNIVERSIDADE ESTADUAL DE PONTA GROSSA}
 } [Baixa]
-
+```
 
 ## Como vou fazer meu trabalho? (metodologia)
 
