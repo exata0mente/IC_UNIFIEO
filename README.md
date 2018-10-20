@@ -66,6 +66,24 @@ Periodícos em Geral:
 ### Obter a lista de todos os artigos publicados nos 5 últimos anos e classificar por relevância.
 
 ```bibtex
+
+@inproceedings{oliveira2013integraccao,
+  title={Integra{\c{c}}{\~a}o da linguagem R em Sistemas de Monitoramento Agrometeorol{\'o}gico visando a simula{\c{c}}{\~a}o},
+  author={OLIVEIRA, JI and Rosa, Murilo B and Tsukahara, Rodrigo Y and PETROF, A and BUENO, G and Mainardes, Silvana G and Oliveira, Ant{\^o}nio N and BOITO, BLL},
+  booktitle={IX Congresso Brasileiro de AgroInform{\'a}tica},
+  year={2013}
+} [Alta - Lido]
+
+@article{da2016avaliaccao,
+  title={Avalia{\c{c}}{\~a}o do m{\'o}dulo da acelera{\c{c}}{\~a}o da gravidade com Arduino},
+  author={Da Silva, Samir Lacerda and Junior, Judismar Tadeu Guaitolini and Ramos, Gabryel Silva and Gama, Aline Costalonga},
+  journal={Caderno Brasileiro de Ensino de F{\'\i}sica},
+  volume={33},
+  number={2},
+  pages={619--640},
+  year={2016}
+} [Alta]
+
 @article{RJ-2013-032,
   author = {André Dietrich and Sebastian Zug and Jörg Kaiser},
   title = {{The R in Robotics}},
@@ -75,20 +93,6 @@ Periodícos em Geral:
   pages = {117--128},
   volume = {5},
   number = {2}
-} [Alta]
-
-@inproceedings{oliveira2013integraccao,
-  title={Integra{\c{c}}{\~a}o da linguagem R em Sistemas de Monitoramento Agrometeorol{\'o}gico visando a simula{\c{c}}{\~a}o},
-  author={OLIVEIRA, JI and Rosa, Murilo B and Tsukahara, Rodrigo Y and PETROF, A and BUENO, G and Mainardes, Silvana G and Oliveira, Ant{\^o}nio N and BOITO, BLL},
-  booktitle={IX Congresso Brasileiro de AgroInform{\'a}tica},
-  year={2013}
-} [Alta]
-
-@inproceedings{yanaguibashi2015labsria,
-  title={LabsRia: uma proposta de baixo custo para rob{\'o}tica educacional},
-  author={Yanaguibashi, Erika and Thomaz, Sarah and Gon{\c{c}}alves, Luiz Marcos G},
-  booktitle={VI Workshop de Rob{\'o}tica Educacional},
-  year={2015}
 } [Alta]
 
 @article{mahmood2017design,
@@ -131,6 +135,11 @@ Periodícos em Geral:
   number = {1}
 } [Média]
 
+@article{bezerra2009tecnologias,
+  title={Tecnologias livres e Ensino de F{\'\i}sica: uma experi{\^e}ncia na UTFPR},
+  author={BEZERRA JR, Arandi Giname and Merkle, Luiz Ernesto and de Souza, Evandro Sirichuk and Spolaore, Lucas Salom{\~a}o and Ricetti, Rodrigo and Gim{\'e}nez-Lugo, Gustavo Alberto and Filho, Nestor Cortez Saavedra}
+} [Média] 
+
 @article{de7094software,
   title={Software livre e desenvolvimento de trabalhos cient{\'\i}ficos: o R como exemplo a ser seguido},
   author={de Aquino, Jakson Alves},
@@ -145,6 +154,9 @@ Periodícos em Geral:
   author={NASCIMENTO, Antonielli D and JOCHIMS, Gabriel S and DUTRA, Vinicius B and BARASUOL, Jo{\~a}o B and FIGUEIR{\'O}, Michele F and ANSUJ, Angela P}
 } [Media]
 
+
+[Desenvolvimento de um medidor de grandezas elétricas utilizando Arduino](http://download.c3.furg.br/components/download_categoria/baixar.php?arquivo=5cbdfd0dfa22a3fca7266376887f549b)
+[Media]
 
 @article{RJ-2017-001,
   author = {Taylor Arnold and Michael J. Kane and Simon Urbanek},
