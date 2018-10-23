@@ -2,17 +2,18 @@
 
 ## A definição do problema, problematização
 
+
 ## Por que esta pesquisa é importante? (justificativa)
 
 ## O que pretendo desenvolver? (objetivos)
 
 ### Objetivo Geral
 
-Nesta pesquisa o objetivo geral é descrever a utilização da linguagem R como uma plataforma para projetos que utilize hardware livre, tornando-a uma interface de leitura e apresentação de dados fazendo da linguagem uma ferramenta tanto para projetos mais robustos de IoT quanto para aprendizagem das tecnologias citadas.
+Nesta pesquisa o objetivo geral é **descrever a utilização da linguagem R** como uma plataforma para **projetos que utilizem hardware livre**, tornando-a uma interface de leitura e apresentação de dados **fazendo da linguagem uma ferramenta** tanto para **projetos mais robustos de IoT** quanto para aprendizagem das tecnologias citadas.
 
 ### Objetivo Específico
 
-- Contextualizar a linguagem de programação R como uma aplicação ao hardware livre.
+- Contextualizar a linguagem de programação R como uma aplicação ao hardware livre. 
 - Realizar pesquisas sobre o uso de um hardware livre no intuito de encontrar um fluxo de trabalho ou modo de funcionamento que tenha amplo uso.
 - Definir uma abordagem da linguagem R na leitura dos dados gerados por um hardware livre.
 - Projetar uma interface de exibição, via web, com software livre, para que os dados lidos possam ser apresentados ao usuário.
@@ -82,46 +83,42 @@ Periodícos em Geral:
   number={2},
   pages={619--640},
   year={2016}
-} [Alta]
+} [Alta - Lido]
 
-@article{RJ-2013-032,
-  author = {André Dietrich and Sebastian Zug and Jörg Kaiser},
-  title = {{The R in Robotics}},
-  year = {2013},
-  journal = {{The R Journal}},
-  url = {https://journal.r-project.org/archive/2013/RJ-2013-032/index.html},
-  pages = {117--128},
-  volume = {5},
-  number = {2}
-} [Alta]
-
-@article{mahmood2017design,
-  title={Design of Weather Monitoring System Using Arduino Based Database Implementation},
-  author={Mahmood, Sarmad Nozad and Hasan, Forat Falih},
-  journal={Journal of Multidisciplinary Engineering Science and Technology (JMEST)},
-  volume={4},
-  number={4},
-  pages={7109},
-  year={2017}
-} [Alta]
 
 @article{da2013aplicaccao,
   title={APLICA{\c{C}}{\~A}O DE HARDWARE DE BAIXO CUSTO NA AUTOMA{\c{C}}{\~A}O RESIDENCIAL},
-  author={da Silva, Eduardo Germano and Perez, Anderson Luiz Fernandes},
+  author={da Sil    va, Eduardo Germano and Perez, Anderson Luiz Fernandes},
   journal={Revista T{\'e}cnico Cient{\'\i}fica do IFSC},
   volume={1},
   number={5},
   pages={171},
   year={2013}
+} [Alta- Lido]
+
+@inproceedings{cavalcante2015analysis,
+  title={An analysis of reference architectures for the internet of things},
+  author={Cavalcante, Everton and Alves, Marcelo Pitanga and Batista, Thais and Delicato, Flavia Coimbra and Pires, Paulo F},
+  booktitle={Proceedings of the 1st International Workshop on Exploring Component-based Techniques for Constructing Reference Architectures},
+  pages={13--16},
+  year={2015},
+  organization={ACM}
 } [Alta]
 
 
-@article{patel2017testbed,
-  title={A Testbed for Experimenting Internet of Things Applications},
-  author={Patel, Parthkumar and Dave, Jayraj and Dalal, Shreedhar and Patel, Pankesh and Chaudhary, Sanjay},
-  journal={arXiv preprint arXiv:1705.07848},
-  year={2017}
+@article{laurentino2014sistema,
+  title={Sistema de Controle e Aquisi{\c{c}}{\~a}o de Dados Via Internet Aplicado a uma Estufa},
+  author={Laurentino, Ana C de M and Amorim, Raphael B da S and Amorim, Daniel B da S},
+  journal={Anais dos Simp{\'o}sios de Inform{\'a}tica do IFNMG-Campus Janu{\'a}ria},
+  year={2014}
 } [Alta]
+
+@article{santos2016internet,
+  title={Internet das coisas: da teoriaa pr{\'a}tica},
+  author={Santos, Bruno P and Silva, LA and Celes, CS and Borges, Jo{\~a}o B and Neto, Bruna S Peres and Vieira, Marcos Augusto M and Vieira, Luiz Filipe M and Goussevskaia, Olga N and Loureiro, AA}
+} [Alta]
+
+
 
 
 @article{RJ-2017-024,
@@ -149,9 +146,30 @@ Periodícos em Geral:
   pages={75--86}
 } [Média]
 
+@article{haag2005introduzir,
+author = {Veit, Eliane Angela and Haag, Rafael and Araujo, Ives Solano},
+journal = {F{\'{i}}sica na escola},
+number = {1},
+pages = {69--74},
+title = {{Porque e como introduzir a aquisi{\c{c}}{\~{a}}o autom{\'{a}}tica de dados no laborat{\'{o}}rio did{\'{a}}tico de f{\'{i}}sica?}},
+url = {http://hdl.handle.net/10183/116432},
+volume = {6},
+year = {2005}
+} [Media]
+
 @article{nascimentoutilizaccao,
   title={UTILIZA{\c{C}}{\~A}O DA BIBLIOTECA SHINY NA ELABORA{\c{C}}{\~A}O DE WEB APPS PARA O ENSINO DE ROB{\'O}TICA},
   author={NASCIMENTO, Antonielli D and JOCHIMS, Gabriel S and DUTRA, Vinicius B and BARASUOL, Jo{\~a}o B and FIGUEIR{\'O}, Michele F and ANSUJ, Angela P}
+} [Media]
+
+@article{mahmood2017design,
+  title={Design of Weather Monitoring System Using Arduino Based Database Implementation},
+  author={Mahmood, Sarmad Nozad and Hasan, Forat Falih},
+  journal={Journal of Multidisciplinary Engineering Science and Technology (JMEST)},
+  volume={4},
+  number={4},
+  pages={7109},
+  year={2017}
 } [Media]
 
 
@@ -168,7 +186,9 @@ Periodícos em Geral:
   volume = {9},
   number = {1}
 } [Média]
- 
+
+
+
 @article{RJ-2013-029,
   author = {Stefan Böhringer},
   title = {{Dynamic Parallelization of R Functions}},
@@ -178,6 +198,13 @@ Periodícos em Geral:
   pages = {88--96},
   volume = {5},
   number = {2}
+} [Baixa]
+
+@article{patel2017testbed,
+  title={A Testbed for Experimenting Internet of Things Applications},
+  author={Patel, Parthkumar and Dave, Jayraj and Dalal, Shreedhar and Patel, Pankesh and Chaudhary, Sanjay},
+  journal={arXiv preprint arXiv:1705.07848},
+  year={2017}
 } [Baixa]
 
 @article{RJ-2016-029,
