@@ -180,15 +180,7 @@
 \maketitle
 
 % resumo em português
-\begin{resumoumacoluna}
- Neste trabalho será desenvolvido métodos de obtenção, tratamento e exibição em tempo real de dados gerados por sensores ligados a um Arduíno utilizando o ambiente de linguagem R como interface. As medições serão efetuadas por um protótipo de uma mini central meteorológica. Dessa forma será possível utilizar o método em outros projetos que faça leitura de variáveis ambientais. Além disso será possível utilizar o conteúdo da pesquisa no auxílio da aprendizagem dispositivos de hardware livre (potenciais geradores de dados) com a linguagem de programação R (comum em modelagem estatítisca).
- 
- \vspace{\onelineskip}
- 
- \noindent
- \textbf{Palavras-chave}: linguagem R. arduíno. análise de dados.
-\end{resumoumacoluna}
-
+\input{artigo_conic/resumo}
 %]  			% FIM DE ARTIGO EM DUAS COLUNAS
 % ---
 
@@ -200,99 +192,12 @@
 % ----------------------------------------------------------
 % Introdução
 % ----------------------------------------------------------
-\section*{Introdução}
-\addcontentsline{toc}{section}{Introdução}
-
-Na comunidade R, existem poucas publicações com relação ao tema proposto. As 
-existentes, são de carater mais 
-específico\footnote{\url{
-https://www.r-bloggers.com/displaying-spatial-sensor-data-from-arduino-with-r-o
-n-google-maps/}} veículada em páginas pessoais ou fóruns. 
-
-Neste projeto, será abordado as partes que compõe a leitura, tratamento e 
-apresentação de dados, temas mais comuns aos usuários de R. Serão tratados 
-pontos como leitura de dados de um dispositivo de prototipagem, onde será 
-utilizado um Arduíno, métodos de limpeza e apresentação dos dados, sendo o 
-primeiro por 
-algoritmos ou análise dos dados e o segundo por meio de gráficos, planilhas e 
-programação 
-literária\footnote{\url{https://en.wikipedia.org/wiki/Literate_programming}}.
-
-Seguindo o paradigma da ciência moderna, este projeto será todo conduzido em 
-licença aberta, utilizaremos apenas softwares e hardwares livres, além dos 
-dados 
-gerados, análises e scripts implementados estarem disponíveis em repositórios 
-abertos como GitHub\footnote{\url{https://github.com/}} e 
-Figshare\footnote{\url{https://figshare.com/}}.
-
-Ao término deste projeto, pretende-se alimentar mais discussões envolvendo o R e o 
-Arduíno, fazendo com que ambos possam ser aprendidos de forma conjunta e 
-difundida. 
-
-\begin{citacao}[english]
-  "The modern academic scientist develops code in the open, publishes data and 
-code open source, posts preprints of their academic work, still submits to 
-traditional journals, and reviews for those journals, but may also write blog 
-posts or use social media to critique published work in post-publication review 
-fora."\cite{Peng2015}
-\end{citacao}
+\input{artigo_conic/introducao}
 % ----------------------------------------------------------
 % Seção de explicações
 % ----------------------------------------------------------
-\section[Objetivos]{Objetivos}
-
-\subsection{Objetivo Geral}
-
-Propor métodos para obtenção, limpeza e apresentação de dados gerados por 
-um dispositivo de prototipagem, utilizando a linguagem de programaçao R e o 
-\emph{hardware open source} Arduíno.
-
-\subsection{Objetivo Específico}
-
-\begin{alineas}
-  
-  \item Identificar pacotes do R que permitam interação com interfaces de hardware.
-  \item Descrever as formas de comunicação e obtenção de dados entre o R e o hardware.
-  %\item Sugerir melhorias nos pacotes de comunicação serial.
-  %\item Aplicar conceitos de limpeza de dados aos dados lidos.
-  %\item Avaliar técnicas existentes de organização e limpeza de dados.
-  \item Identificar pacotes do R que permitam apresentar dados de forma dinâmica e 
-  possivelmente em tempo real.
-  \item Aplicar métodos de apresentação e resumo de dados.
-  \item Implementar um servidor web para visualização dos dados em tempo real.
-  
-\end{alineas}
-
-\section[Metodologia]{Metodologia}
-
-O projeto foi iniciado com uma pesquisa sobre os métodos disponíveis em R para 
-leitura de dados de um Arduíno. 
-
-Inicialmente verificamos o pacote 
-\emph{serial} \cite{Seilmayer2017} que fornece métodos para comunicação com uma porta serial emulada. Em seguida, 
-utilizando um projeto pronto de Arduíno, iremos efetuar leituras de dados e 
-aplicar as técnicas de limpeza de dados. 
-
-Para os pacotes que serão utilizados na manipulação e apresentação de dados, 
-\emph{dplyr}\cite{Wickham2018} e \emph{ggplot2}\cite{Wickham2009} respectivamente, será efetuado uma pesquisa para 
-entendimento completo das funções fornecidas e posteriormente sua aplicação no 
-projeto. Este é um dos pontos chaves do projeto já que aqui definiremos ou 
-criaremos funções que ficarão em execução enquanto os dados estiverem sendo 
-gerados.
-
-Após definido os métodos de leitura, limpeza e apresentação dos dados, será 
-iniciado uma pesquisa sobre ferramentas de aplicação \emph{web} que permitam a 
-integração da linguagem R. Em seguida iremos montar um servidor web que recebe e 
-apresenta em tempo real os dados gerados pelo Arduíno. Para isso, fará parte do 
-conhecimento adquirido nesta pesquisa as tecnologias que permitem a criação, 
-hospedagem e modelagem de um servidor de aplicação \emph{web}.
-
-Ao final do projeto, pretende-se apresentar um sistema que mostre em tempo real, 
-informações (gráficos, tabelas, resumos) de dados gerados por um dispositivo de 
-prototipagem Arduíno.
-
-
-
+\input{artigo_conic/objetivo}
+\input{artigo_conic/metodologia}
 % ---
 % Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
 % ---
@@ -302,22 +207,11 @@ prototipagem Arduíno.
 % ---
 % Conclusão
 % ---
-\section*{Considerações finais}
-%\addcontentsline{toc}{section}{Considerações finais}
-
-A linguagem de programação R e o dispositivo de prototipagem do Arduíno possuem semelhança quanto a sua cultura: ser "livre". 
-Este tipo de filosofia permite que diversos conteúdos sejam gerados referentes a várias aplicações. A linguagem R por exemplo, é uma excelente ferramenta (desde seu ambiente, aplicações e até tipagem de sua linguagem) para tratamento de dados. Isso faz com que diversos pacotes sejam criados pela comunidade. Os pacotes dplyr e ggplot2 por exemplo são ferramentas que estão mostrando-se altamente aplicável ao projeto em andamento. Também o pacote serial pois apresenta todos os métodos que foram necessários para conexão e leitura de uma porta serial emulada, característica de Arduíno.
-
-Os próximos passos serão de comparação de desempenho de leitura de dados com outros pacotes do R, diferentes formas de obtenção de dados (wi-fi, bluetooth, webservices) e desenvolvimento de um ambiente web para apresentação dos dados em qualquer lugar possibilitando a verificação de medições em ambientes fisicamente distantes.
-
+\input{artigo_conic/consideracoes_finais}
 %\begin{citacao}[english]
  % "When you start monitoring the environment,
   %something happens: You start to understand the world around you in a %new way." \cite{Gertz2012}
 %\end{citacao}
-
-
-
-
 
 % ----------------------------------------------------------
 % ELEMENTOS PÓS-TEXTUAIS
@@ -329,7 +223,7 @@ Os próximos passos serão de comparação de desempenho de leitura de dados com
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-\bibliography{refs/refs.bib}
+\bibliography{refs/refs}
 
 % ----------------------------------------------------------
 % Glossário
@@ -357,5 +251,4 @@ Os próximos passos serão de comparação de desempenho de leitura de dados com
 % Inicia os anexos
 % ---
 %\anexos
-%\nocite{Wickham2018,Ross1996,Leek2016,Leek2015,Peng2015b}
 \end{document}
