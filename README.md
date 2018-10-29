@@ -96,15 +96,23 @@ Periodícos em Geral:
   year={2013}
 } [Alta- Lido]
 
-@inproceedings{cavalcante2015analysis,
-  title={An analysis of reference architectures for the internet of things},
-  author={Cavalcante, Everton and Alves, Marcelo Pitanga and Batista, Thais and Delicato, Flavia Coimbra and Pires, Paulo F},
-  booktitle={Proceedings of the 1st International Workshop on Exploring Component-based Techniques for Constructing Reference Architectures},
-  pages={13--16},
-  year={2015},
-  organization={ACM}
-} [Alta]
-
+@inproceedings{Cavalcante:2015:ARA:2755567.2755569,
+ author = {Cavalcante, Everton and Alves, Marcelo Pitanga and Batista, Thais and Delicato, Flavia Coimbra and Pires, Paulo F.},
+ title = {An Analysis of Reference Architectures for the Internet of Things},
+ booktitle = {Proceedings of the 1st International Workshop on Exploring Component-based Techniques for Constructing Reference Architectures},
+ series = {CobRA '15},
+ year = {2015},
+ isbn = {978-1-4503-3445-7},
+ location = {Montr\&\#233;al, QC, Canada},
+ pages = {13--16},
+ numpages = {4},
+ url = {http://doi.acm.org/10.1145/2755567.2755569},
+ doi = {10.1145/2755567.2755569},
+ acmid = {2755569},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {internet of things, iot, reference architecture},
+}[Alta]
 
 @article{laurentino2014sistema,
   title={Sistema de Controle e Aquisi{\c{c}}{\~a}o de Dados Via Internet Aplicado a uma Estufa},
